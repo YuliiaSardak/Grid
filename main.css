@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+body {
+    max-width: 1440px;
+    height: 5565px;
+    background: #FFFFFF;
+    font-family: 'Delius Unicase', cursive;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+.main__section {
+    margin: 0 auto;
+}
+h1 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    text-align: center;
+}
+.architectural__photography {
+    max-width: 1170px;
+    height: 1295px;
+    margin: 120px auto;
+}
+p, a {
+    font-size: 20px;
+    line-height: 23px;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.gallery__photo--name {
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.gallery__photo--date {
+    font-weight: 400;
+    color: #E0E0E0;
+}
+.architectural__photography--gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.gallery__photo {
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    height: 370px;
+}
+.jezael {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/jazel.jpg');
+}
+.tom {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/tom.jpg');
+}
+.johan {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/johan.jpg');
+}
+.federico {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/federico.jpg');
+}
+.casey {
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/casey.jpg');
+}
+.alexander {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/alexander.jpg');
+}
+.text__block {
+    display: flex;
+    justify-content: space-between;
+}
+.hidden__block {
+    display: flex;
+    justify-content: space-between;
+}
+.architectural__photography--gallery, .nature__works--gallery, .portrait__gallery {
+    margin: 80px auto;
+}
+.hidden__block--heart:hover > .block__heart-rect {
+    fill-opacity: 1;
+}
+.hidden__block--download:hover > .block__download-rect {
+    fill-opacity: 1;
+}
+svg {
+    margin: 20px;
+    cursor: pointer;
+}
+.gallery__photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 370px;
+}
+.hidden__block {
+    opacity: 0;
+}
+.gallery__photo:hover > .hidden__block {
+    opacity: 1;
+}
+.jezael:hover {
+    background-image: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/jazel.jpg');
+}
+.tom:hover {
+    background-image: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/tom.jpg');
+}
+.johan:hover {
+    background-image: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/johan.jpg');
+}
+.federico:hover {
+    background-image: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/federico.jpg');
+}
+.casey:hover {
+    background-image: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/casey.jpg');
+}
+.alexander:hover {
+    background-image: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/alexander.jpg');
+}
+.nature__works {
+    max-width: 1170px;
+    height: 1695px;
+    margin: 0 auto;
+}
+.nature__works--gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.robert {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/robert.jpg');
+}
+.sean {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/sean.jpg');
+}
+.john {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 770px;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/john.jpg');
+}
+.dave {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    height: 770px;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/dave.jpg');
+}
+.leonard {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/leonard.jpg');
+}
+.rob {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/rob.jpg');
+}
+.robert:hover {
+    background-image: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/robert.jpg');
+}
+.sean:hover {
+    background-image: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/sean.jpg');
+}
+.john:hover {
+    background-image: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/john.jpg');
+}
+.dave:hover {
+    background-image: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/dave.jpg');
+}
+.leonard:hover {
+    background-image:linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/leonard.jpg');
+}
+.rob:hover {
+    background-image: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/rob.jpg');
+}
+.portrait {
+    max-width: 1170px;
+    height: 2095px;
+    margin: 120px auto;
+}
+.portrait__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.pooja {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/pooja.jpg');
+}
+.dom {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: span 2;
+    height: 770px;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/dom.jpg');
+}
+.seth {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/seth.jpg');
+}
+.devn {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/devn.jpg');
+}
+.noah {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: span 2;
+    height: 770px;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/noah.jpg');
+}
+.sincerely {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: span 2;
+    height: 770px;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/sincerely.jpg');
+}
+.seth-second {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/seth_second.jpg');
+}
+.melissa {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-column: span 2;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/melissa.jpg');
+}
+.brooke {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/brooke.jpg');
+}
+.clem {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%),
+    url('./image/clem.jpg');
+}
+.pooja:hover {
+    background-image: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/pooja.jpg');
+}
+.dom:hover {
+    background-image: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/dom.jpg');
+}
+.seth:hover {
+    background-image: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/seth.jpg');
+}
+.devn:hover {
+    background-image: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/devn.jpg');
+}
+.noah:hover {
+    background-image: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/noah.jpg');
+}
+.sincerely:hover {
+    background-image: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/sincerely.jpg');
+}
+.seth-second:hover {
+    background-image: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/seth_second.jpg');
+}
+.melissa:hover {
+    background-image: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/melissa.jpg');
+}
+.brooke:hover {
+    background-image: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/brooke.jpg');
+}
+.clem:hover {
+    background-image: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%),
+    url('./image/clem.jpg');
+}
+
+
+
